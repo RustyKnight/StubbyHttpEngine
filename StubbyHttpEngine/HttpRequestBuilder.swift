@@ -10,6 +10,9 @@ import Foundation
 import HttpEngineCore
 
 public class HttpRequestBuilderFactory: HttpEngineCore.HttpRequestBuilderFactory{
+	
+	public init() {}
+	
 	public func request(to url: URL) -> HttpEngineCore.HttpRequestBuilder {
 		return HttpRequestBuilder(to: url)
 	}
