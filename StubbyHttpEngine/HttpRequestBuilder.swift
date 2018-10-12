@@ -11,11 +11,11 @@ import HttpEngineCore
 
 public class HttpRequestBuilderFactory: HttpEngineCore.HttpRequestBuilderFactory{
 	public func request(to url: URL) -> HttpEngineCore.HttpRequestBuilder {
-		return HttpRequestBuilder(url: url)
+		return HttpRequestBuilder(to: url)
 	}
 }
 
-public class HttpRequestBuilder: BaseHttpEngineBuilder {
+public class HttpRequestBuilder: BaseHttpRequestBuilder {
 	public override func build() throws -> HttpEngineCore.HttpEngine {
 		
 		return HttpEngine(url: url,
