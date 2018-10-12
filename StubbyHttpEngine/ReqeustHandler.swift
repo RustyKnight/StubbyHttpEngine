@@ -16,7 +16,7 @@ public protocol RequestHandler: class {
 	func canDelete(from: URL) -> Bool
 	
 	func get(from url: URL) -> Promise<Data?>
-	func post(to url: URL) -> Promise<Data?>
+	func post(_ data: Data, to url: URL) -> Promise<Data?>
 	func put(to url: URL) -> Promise<Data?>
 	func delete(from url: URL) -> Promise<Data?>
 }

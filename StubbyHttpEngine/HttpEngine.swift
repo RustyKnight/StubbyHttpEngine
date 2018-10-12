@@ -56,7 +56,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 	open func post(data: Data) -> Promise<Data?> {
 		for handler in StubbyRequestHandlerRegistery.shared.handlers {
 			if handler.canPost(to: url) {
-				return handler.post(to: url)
+				return handler.post(data, to: url)
 			}
 		}
 		return Promise<Data?>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
