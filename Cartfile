@@ -1,4 +1,4 @@
-binary "https://beam.carthage.com:8443/json/10.0b10A255/Hydra" ~> 1.2.1
-binary "https://beam.carthage.com:8443/json/10.0b10A255/LogWrapperKit" ~> 1.0.0
+binary "https://.../json/10.0b10A255/Hydra" ~> 1.2.1
+binary "https://.../json/10.0b10A255/LogWrapperKit" ~> 1.0.0
 
-git "http://shane.whitehead@stash:7990/scm/ioslib/httpenginecore.git" "master"
+git "http://.../httpenginecore.git" "master"
