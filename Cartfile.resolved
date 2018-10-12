@@ -1,0 +1,4 @@
+binary "https://beam.carthage.com:8443/json/10.0b10A255/Alamofire" "4.7.3"
+binary "https://beam.carthage.com:8443/json/10.0b10A255/Hydra" "1.2.1"
+binary "https://beam.carthage.com:8443/json/10.0b10A255/LogWrapperKit" "1.0.0"
+git "http://shane.whitehead@stash:7990/scm/ioslib/httpenginecore.git" "a9c6cd0d63216fe75719ef6e006c8ef6f660e3ba"
