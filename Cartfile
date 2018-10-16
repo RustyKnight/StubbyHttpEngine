@@ -1,4 +1,4 @@
-binary "https://kaizen.api.net:8443/json/10.1b10O23u/Hydra" ~> 1.2.1
-binary "https://kaizen.api.net:8443/json/10.1b10O23u/LogWrapperKit" ~> 1.0.0
+binary "https://kaizen.api.net:8443/json/10.1b10O35n/Hydra" ~> 1.2.1
+binary "https://kaizen.api.net:8443/json/10.1b10O35n/LogWrapperKit" ~> 1.0.0
 
 git "https://github.com/RustyKnight/HttpEngineCore" "master"
