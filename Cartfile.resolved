@@ -1,3 +1,3 @@
-binary "https://kaizen.api.net:8443/json/10.1b10O23u/Hydra" "1.2.1"
-binary "https://kaizen.api.net:8443/json/10.1b10O23u/LogWrapperKit" "1.0.0"
-github "RustyKnight/HttpEngineCore" "7f136e0b68468bf7184ab10bee418f6b9f98a0bb"
+binary "https://kaizen.api.net:8443/json/10.1b10O45e/Hydra" "1.2.1"
+binary "https://kaizen.api.net:8443/json/10.1b10O45e/LogWrapperKit" "1.0.0"
+github "RustyKnight/HttpEngineCore" "57e37f54f7a2f0950fa14287028c3a4aecd0c2b8"
