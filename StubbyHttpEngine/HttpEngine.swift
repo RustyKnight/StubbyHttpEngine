@@ -44,10 +44,10 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 		return Promise<Data?>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
-	open func put() -> Promise<Data?> {
+	open func put(data: Data) -> Promise<Data?> {
 		for handler in StubbyRequestHandlerRegistery.shared.handlers {
 			if handler.canPut(to: url) {
-				return handler.put(to: url)
+				return handler.put(data, to: url)
 			}
 		}
 		return Promise<Data?>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
