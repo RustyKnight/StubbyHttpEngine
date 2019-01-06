@@ -1,4 +1,6 @@
-binary "https://kaizen.api.net:8443/json/10.1b10O45e/Hydra" ~> 1.2.1
-binary "https://kaizen.api.net:8443/json/10.1b10O45e/LogWrapperKit" ~> 1.0.0
+#binary "https://kaizen.api.net:8443/json/10.1b10O45e/Hydra" ~> 1.2.1
+#binary "https://kaizen.api.net:8443/json/10.1b10O45e/LogWrapperKit" ~> 1.0.0
 
-git "https://github.com/RustyKnight/HttpEngineCore" "master"
+git "https://github.com/RustyKnight/HttpEngineCore" ~> 0.0.4
+git "https://github.com/RustyKnight/Cadmus" ~> 1.0.5
+git "https://github.com/malcommac/Hydra" ~> 1.2.1
