@@ -35,6 +35,15 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 		self.credentials = credentials
 	}
 
+    public func get(data: Data) -> Promise<Data?> {
+        for handler in StubbyRequestHandlerRegistery.shared.handlers {
+            if handler.canGet(from: url) {
+                return handler.get(from: url, using: data)
+            }
+        }
+        return Promise<Data?>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+    }
+
 	open func get() -> Promise<Data?> {
 		for handler in StubbyRequestHandlerRegistery.shared.handlers {
 			if handler.canGet(from: url) {

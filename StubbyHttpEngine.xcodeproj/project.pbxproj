@@ -11,12 +11,12 @@
 		12ACE3DC217007EB00604C59 /* StubbyHttpEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3DB217007EB00604C59 /* StubbyHttpEngineTests.swift */; };
 		12ACE3DE217007EB00604C59 /* StubbyHttpEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 12ACE3D0217007EB00604C59 /* StubbyHttpEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12ACE3EC2170089A00604C59 /* HttpEngineCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ACE3E82170089A00604C59 /* HttpEngineCore.framework */; };
-		12ACE3ED2170089A00604C59 /* LogWrapperKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ACE3E92170089A00604C59 /* LogWrapperKit.framework */; };
 		12ACE3EE2170089A00604C59 /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ACE3EA2170089A00604C59 /* Hydra.framework */; };
 		12ACE3F1217009DE00604C59 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F0217009DE00604C59 /* HttpRequestBuilder.swift */; };
 		12ACE3F3217009ED00604C59 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F2217009ED00604C59 /* HttpEngine.swift */; };
 		12ACE3F521700C2400604C59 /* ReqeustHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F421700C2400604C59 /* ReqeustHandler.swift */; };
 		12ACE3F721703F3C00604C59 /* StubbyRequestHandlerRegistery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F621703F3C00604C59 /* StubbyRequestHandlerRegistery.swift */; };
+		18D494D421E2B62E00A70979 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D494D321E2B62E00A70979 /* Cadmus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,7 @@
 		12ACE3F2217009ED00604C59 /* HttpEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpEngine.swift; sourceTree = "<group>"; };
 		12ACE3F421700C2400604C59 /* ReqeustHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqeustHandler.swift; sourceTree = "<group>"; };
 		12ACE3F621703F3C00604C59 /* StubbyRequestHandlerRegistery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbyRequestHandlerRegistery.swift; sourceTree = "<group>"; };
+		18D494D321E2B62E00A70979 /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/iOS/Cadmus.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D494D421E2B62E00A70979 /* Cadmus.framework in Frameworks */,
 				12ACE3EC2170089A00604C59 /* HttpEngineCore.framework in Frameworks */,
-				12ACE3ED2170089A00604C59 /* LogWrapperKit.framework in Frameworks */,
 				12ACE3EE2170089A00604C59 /* Hydra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +113,7 @@
 		12ACE3E72170089A00604C59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18D494D321E2B62E00A70979 /* Cadmus.framework */,
 				12ACE3EB2170089A00604C59 /* Alamofire.framework */,
 				12ACE3E82170089A00604C59 /* HttpEngineCore.framework */,
 				12ACE3EA2170089A00604C59 /* Hydra.framework */,
