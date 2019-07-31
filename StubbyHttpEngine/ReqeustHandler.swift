@@ -8,6 +8,7 @@
 
 import Foundation
 import Hydra
+import HttpEngineCore
 
 public protocol RequestHandler: class {
 	func canGet(from: URL) -> Bool
@@ -15,9 +16,12 @@ public protocol RequestHandler: class {
 	func canPut(to: URL) -> Bool
 	func canDelete(from: URL) -> Bool
 	
-	func get(from url: URL) -> Promise<Data?>
-    func get(from url: URL, using: Data) -> Promise<Data?>
-	func post(_ data: Data, to url: URL) -> Promise<Data?>
-	func put(_ data: Data, to url: URL) -> Promise<Data?>
-	func delete(from url: URL) -> Promise<Data?>
+	func get(from url: URL) -> Promise<RequestResponse>
+	func get(from url: URL, using: Data) -> Promise<RequestResponse>
+	func post(_ data: Data, to url: URL) -> Promise<RequestResponse>
+	func post(to url: URL) -> Promise<RequestResponse>
+	func put(_ data: Data, to url: URL) -> Promise<RequestResponse>
+	func put(to url: URL) -> Promise<RequestResponse>
+	func delete(from url: URL) -> Promise<RequestResponse>
+	func delete(data: Data, from url: URL) -> Promise<RequestResponse>
 }
