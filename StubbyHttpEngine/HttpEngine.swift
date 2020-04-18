@@ -21,6 +21,10 @@ struct DefaultRequestResponse: RequestResponse {
 }
 
 open class HttpEngine: HttpEngineCore.HttpEngine {
+  public func post(formData: [MultipartFormItem]) -> Promise<RequestResponse> {
+    fatalError("Not implemented")
+  }
+  
 	
 	
 	var url: URL!
