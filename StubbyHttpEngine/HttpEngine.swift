@@ -15,6 +15,8 @@ enum HttpEngineError: Error {
 }
 
 struct DefaultRequestResponse: RequestResponse {
+	var responseHeaders: [AnyHashable : Any]?
+	
 	var statusCode: Int
 	var statusDescription: String
 	var data: Data?
