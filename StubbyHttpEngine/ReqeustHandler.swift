@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import Hydra
+import PromiseKit
 import HttpEngineCore
 
-public protocol RequestHandler: class {
+public protocol RequestHandler: AnyObject {
 	func canGet(from: URL) -> Bool
 	func canPost(to: URL) -> Bool
 	func canPut(to: URL) -> Bool

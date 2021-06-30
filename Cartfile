@@ -1,3 +1,1 @@
-binary "https://www.kiazenenterprises.org:8443/json/11.5b11E608c/HttpEngineCore" ~> 0.0.11
-binary "https://www.kiazenenterprises.org:8443/json/11.5b11E608c/Hydra" ~> 2.0.3
-binary "https://www.kiazenenterprises.org:8443/json/11.5b11E608c/Cadmus" ~> 1.0.5
+git "https://github.com/RustyKnight/HttpEngineCore" "a530b99a7c77c9c8d79c5ff392edeef0b33b9654"

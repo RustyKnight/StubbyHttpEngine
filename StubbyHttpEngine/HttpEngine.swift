@@ -8,7 +8,7 @@
 
 import Foundation
 import HttpEngineCore
-import Hydra
+import PromiseKit
 
 enum HttpEngineError: Error {
 	case noHandlersAvaliableForRequest(url: URL)
@@ -54,7 +54,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.get(from: url, using: data)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 	open func get() -> Promise<RequestResponse> {
@@ -63,7 +63,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.get(from: url)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 	open func put(data: Data) -> Promise<RequestResponse> {
@@ -72,7 +72,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.put(data, to: url)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 	open func put() -> Promise<RequestResponse> {
@@ -81,7 +81,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.put(to: url)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 	open func post(data: Data) -> Promise<RequestResponse> {
@@ -90,7 +90,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.post(data, to: url)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 	open func post() -> Promise<RequestResponse> {
@@ -99,7 +99,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.post(to: url)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 	open func delete() -> Promise<RequestResponse> {
@@ -108,7 +108,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.delete(from: url)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 	open func delete(data: Data) -> Promise<RequestResponse> {
@@ -117,7 +117,7 @@ open class HttpEngine: HttpEngineCore.HttpEngine {
 				return handler.delete(from: url)
 			}
 		}
-		return Promise<RequestResponse>(rejected: HttpEngineError.noHandlersAvaliableForRequest(url: url))
+		return Promise<RequestResponse>(error: HttpEngineError.noHandlersAvaliableForRequest(url: url))
 	}
 	
 }

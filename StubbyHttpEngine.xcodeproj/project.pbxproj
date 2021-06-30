@@ -10,13 +10,13 @@
 		12ACE3D7217007EB00604C59 /* StubbyHttpEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ACE3CD217007EB00604C59 /* StubbyHttpEngine.framework */; };
 		12ACE3DC217007EB00604C59 /* StubbyHttpEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3DB217007EB00604C59 /* StubbyHttpEngineTests.swift */; };
 		12ACE3DE217007EB00604C59 /* StubbyHttpEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 12ACE3D0217007EB00604C59 /* StubbyHttpEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12ACE3EC2170089A00604C59 /* HttpEngineCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ACE3E82170089A00604C59 /* HttpEngineCore.framework */; };
-		12ACE3EE2170089A00604C59 /* Hydra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ACE3EA2170089A00604C59 /* Hydra.framework */; };
 		12ACE3F1217009DE00604C59 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F0217009DE00604C59 /* HttpRequestBuilder.swift */; };
 		12ACE3F3217009ED00604C59 /* HttpEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F2217009ED00604C59 /* HttpEngine.swift */; };
 		12ACE3F521700C2400604C59 /* ReqeustHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F421700C2400604C59 /* ReqeustHandler.swift */; };
 		12ACE3F721703F3C00604C59 /* StubbyRequestHandlerRegistery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACE3F621703F3C00604C59 /* StubbyRequestHandlerRegistery.swift */; };
-		18D494D421E2B62E00A70979 /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D494D321E2B62E00A70979 /* Cadmus.framework */; };
+		1825D2D6268C7D3600763ADB /* HttpEngineCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1825D2D3268C7D3600763ADB /* HttpEngineCore.framework */; };
+		1825D2D8268C7D3600763ADB /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1825D2D4268C7D3600763ADB /* PromiseKit.framework */; };
+		1825D2DA268C7D3600763ADB /* Cadmus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1825D2D5268C7D3600763ADB /* Cadmus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +36,14 @@
 		12ACE3D6217007EB00604C59 /* StubbyHttpEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StubbyHttpEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12ACE3DB217007EB00604C59 /* StubbyHttpEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbyHttpEngineTests.swift; sourceTree = "<group>"; };
 		12ACE3DD217007EB00604C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12ACE3E82170089A00604C59 /* HttpEngineCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HttpEngineCore.framework; path = Carthage/Build/iOS/HttpEngineCore.framework; sourceTree = "<group>"; };
-		12ACE3E92170089A00604C59 /* LogWrapperKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LogWrapperKit.framework; path = Carthage/Build/iOS/LogWrapperKit.framework; sourceTree = "<group>"; };
-		12ACE3EA2170089A00604C59 /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/iOS/Hydra.framework; sourceTree = "<group>"; };
-		12ACE3EB2170089A00604C59 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		12ACE3F0217009DE00604C59 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
 		12ACE3F2217009ED00604C59 /* HttpEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpEngine.swift; sourceTree = "<group>"; };
 		12ACE3F421700C2400604C59 /* ReqeustHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqeustHandler.swift; sourceTree = "<group>"; };
 		12ACE3F621703F3C00604C59 /* StubbyRequestHandlerRegistery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbyRequestHandlerRegistery.swift; sourceTree = "<group>"; };
-		18D494D321E2B62E00A70979 /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/iOS/Cadmus.framework; sourceTree = "<group>"; };
+		1825D2D3268C7D3600763ADB /* HttpEngineCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HttpEngineCore.framework; path = Carthage/Build/iOS/HttpEngineCore.framework; sourceTree = "<group>"; };
+		1825D2D4268C7D3600763ADB /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		1825D2D5268C7D3600763ADB /* Cadmus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cadmus.framework; path = Carthage/Build/iOS/Cadmus.framework; sourceTree = "<group>"; };
+		1825D2DD268C7DC400763ADB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D494D421E2B62E00A70979 /* Cadmus.framework in Frameworks */,
-				12ACE3EC2170089A00604C59 /* HttpEngineCore.framework in Frameworks */,
-				12ACE3EE2170089A00604C59 /* Hydra.framework in Frameworks */,
+				1825D2DA268C7D3600763ADB /* Cadmus.framework in Frameworks */,
+				1825D2D6268C7D3600763ADB /* HttpEngineCore.framework in Frameworks */,
+				1825D2D8268C7D3600763ADB /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +71,7 @@
 		12ACE3C3217007EB00604C59 = {
 			isa = PBXGroup;
 			children = (
+				1825D2DD268C7DC400763ADB /* Package.swift */,
 				12ACE3CF217007EB00604C59 /* StubbyHttpEngine */,
 				12ACE3DA217007EB00604C59 /* StubbyHttpEngineTests */,
 				12ACE3CE217007EB00604C59 /* Products */,
@@ -113,11 +113,9 @@
 		12ACE3E72170089A00604C59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18D494D321E2B62E00A70979 /* Cadmus.framework */,
-				12ACE3EB2170089A00604C59 /* Alamofire.framework */,
-				12ACE3E82170089A00604C59 /* HttpEngineCore.framework */,
-				12ACE3EA2170089A00604C59 /* Hydra.framework */,
-				12ACE3E92170089A00604C59 /* LogWrapperKit.framework */,
+				1825D2D5268C7D3600763ADB /* Cadmus.framework */,
+				1825D2D3268C7D3600763ADB /* HttpEngineCore.framework */,
+				1825D2D4268C7D3600763ADB /* PromiseKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = BeamCommunications;
 				TargetAttributes = {
 					12ACE3CC217007EB00604C59 = {
@@ -285,6 +283,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -349,6 +348,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -398,7 +398,7 @@
 				);
 				INFOPLIST_FILE = StubbyHttpEngine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,6 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.beamcommunications.StubbyHttpEngine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,7 +431,7 @@
 				);
 				INFOPLIST_FILE = StubbyHttpEngine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.beamcommunications.StubbyHttpEngine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
